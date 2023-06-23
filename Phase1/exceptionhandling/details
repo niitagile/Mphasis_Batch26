@@ -1,0 +1,40 @@
+package exceptionhandling;
+
+
+	Exception -- one unavoidable condition due to user given data or resource information is not correct
+	stops execution of the program forcefully
+	5/0
+	Exception handling
+	Throwable  -printStackTrace(),getMessage()
+		Exception
+			IOException
+			SQLException
+			ClassNotFoundException
+			RuntimeException
+				ArithmeticException
+				NullPointerException String s; s.charAt(0)
+				NumberFormatException  "A$102" 
+				ArrayIndexOutofBoundsException int arr[]=new int[3]  sysout(arr[4])	
+		
+		Error
+			Stackoverflowerror
+			Virtualmachineerror
+			outofmemoryerror	
+			
+	Exceptions-- try, throw, throws, catch, finally	
+	try - a block where we are putting statements which can generate exception
+	catch- a block which handles exception
+	finally - a block which always executes whether exception is thrown or not
+	thr0w- through an exception
+	throws= which we use with method to make list of all exceptions
+	
+	try{}
+	catch(){}
+	finally{}
+	
+	
+	
+	try{}
+	finally{}	
+}
+
