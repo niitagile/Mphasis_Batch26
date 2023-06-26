@@ -1,0 +1,14 @@
+To create your own thread:
+
+interface Runnable{
+	void run();/give working to thread
+}
+
+class Thread implements Runnable{
+	//final type variable to get info about thread
+	//getter and setters setName(), getName()
+	//Life cycle of a thread
+	//other methods
+}
+
+Life Cycle of a thread
