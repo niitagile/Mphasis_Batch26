@@ -3,7 +3,6 @@ package com.credential;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,16 +11,16 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class Welcome
+ * Servlet implementation class Logout
  */
-@WebServlet("/Welcome")
-public class Welcome extends HttpServlet {
+@WebServlet("/Logout")
+public class Logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Welcome() {
+    public Logout() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,18 +29,18 @@ public class Welcome extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		PrintWriter out= response.getWriter();
-	//Sending Information through request object
-		//	String uname=request.getParameter("txtuname");
-	//	out.println("Welcome User"+uname);
-		
+		//getting info through request object
+//		String uname=request.getParameter("txtuname");
+//		out.println("Welcome"+uname+"User");
+	}
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out= response.getWriter();
 		HttpSession session=request.getSession();
-		out.println("Welcome user::"+(String)session.getAttribute("username"));
-		out.println("<a href='Logout'>Logout</a>");
-		
-//		RequestDispatcher dispatch;
-//		dispatch=request.getRequestDispatcher("Logout");
-//		dispatch.forward(request,response);
+		session.invalidate();
+		out.println("you are successfully logout");
 	}
 
 }
