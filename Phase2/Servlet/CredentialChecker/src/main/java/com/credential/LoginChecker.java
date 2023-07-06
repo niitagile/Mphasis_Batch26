@@ -36,6 +36,7 @@ public class LoginChecker extends HttpServlet {
 	}
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			response.setContentType("text/html");
 		String uname=request.getParameter("txtuname");
 		String pword=request.getParameter("txtpword");
 		PrintWriter out=response.getWriter();
