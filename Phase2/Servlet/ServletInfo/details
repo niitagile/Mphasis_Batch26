@@ -1,0 +1,11 @@
+forward()- RequestDispatcher(), execute on server side, it takes all resources from server only
+sendRedirect-HttpServletResponse, execute on client side, it takes resources from anywhere
+
+ServletConfig interface--> it helps us to configure servlet
+ServletContext inteface-- its object is created by conatiner . For each website we are having 1 object of serveltContext
+
+Session Tracking
+1) Cookies
+2) Session
+3) URL rewriting
+4) Hidden Field in form

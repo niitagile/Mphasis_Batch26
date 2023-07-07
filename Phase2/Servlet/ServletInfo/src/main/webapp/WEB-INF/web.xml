@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ServletInfo</display-name>
+  
+  <servlet>
+  <servlet-name>SendRedirectExample</servlet-name>
+  <servlet-class>com.info.SendFRedirectExample</servlet-class>
+  <init-param>
+  <param-name>authorname</param-name>
+  <param-value>Manisha</param-value>
+  
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SendRedirectExample</servlet-name>
+  <url-pattern>/SendRedirectExample</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>databasename</param-name>
+  <param-value>mysql_employee</param-value>
+  </context-param>
+</web-app>
