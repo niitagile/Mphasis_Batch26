@@ -8,11 +8,18 @@ import org.springframework.stereotype.Component;
 
 import com.springcrud.beans.Employee;
 
-@Component
+
 public class EmployeeDao {
-	@Autowired
+
 	JdbcTemplate template;
 	
+	
+	
+
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+	}
+
 	public int insert(Employee emp) {
 		String sql="insert into Employee(eid, name, designation,salary) values(?,?,?,?)";
 		int ans=template.update(sql,emp.getEid(),emp.getName(),emp.getDegisnation(),emp.getSalary());
