@@ -2,7 +2,7 @@ package com.springcrud.beans;
 
 public class Employee {
 	private int eid;
-	private String name, degisnation;
+	private String name, designation;
 	private float salary;
 	public int getEid() {
 		return eid;
@@ -16,11 +16,11 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDegisnation() {
-		return degisnation;
+	public String getDesignation() {
+		return designation;
 	}
-	public void setDegisnation(String degisnation) {
-		this.degisnation = degisnation;
+	public void setDesignation(String degisnation) {
+		this.designation = degisnation;
 	}
 	public float getSalary() {
 		return salary;

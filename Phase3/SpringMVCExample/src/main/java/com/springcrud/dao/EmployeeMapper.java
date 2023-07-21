@@ -16,7 +16,7 @@ public class EmployeeMapper implements RowMapper<Employee> {
 		Employee employee=new Employee();
 		employee.setEid(rs.getInt("eid"));
 		employee.setName(rs.getString("name"));
-		employee.setDegisnation(rs.getString("designation"));
+		employee.setDesignation(rs.getString("designation"));
 		employee.setSalary(rs.getFloat("salary"));
 		
 		

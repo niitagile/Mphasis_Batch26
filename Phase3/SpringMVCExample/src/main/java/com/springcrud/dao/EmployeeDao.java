@@ -22,13 +22,13 @@ public class EmployeeDao {
 
 	public int insert(Employee emp) {
 		String sql="insert into Employee(eid, name, designation,salary) values(?,?,?,?)";
-		int ans=template.update(sql,emp.getEid(),emp.getName(),emp.getDegisnation(),emp.getSalary());
+		int ans=template.update(sql,emp.getEid(),emp.getName(),emp.getDesignation(),emp.getSalary());
 		return ans;
 	}
 	
 	public int update(Employee emp) {
 		String sql="update Employee set  name=?, designation=?,salary=? where eid=?";
-		int ans=template.update(sql,emp.getName(),emp.getDegisnation(),emp.getSalary(),emp.getEid());
+		int ans=template.update(sql,emp.getName(),emp.getDesignation(),emp.getSalary(),emp.getEid());
 		return ans;
 	}
 	
