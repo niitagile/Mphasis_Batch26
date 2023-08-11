@@ -1,0 +1,20 @@
+Bootstrap is a front-end framework --HTMLand CSS
+It is providing you plug-ins for Javascript
+It is providing design templates without javascripts plugins
+Bootstrap for creating rsponsive pages.
+
+Containers- require to wrap elements of a web site
+
+2 types Containers classes provide by bootstarp--> 
+.Container- provides a responsive fixed width container
+.container-fluid--> provides full width conatiner, spanning entire width of a viewport
+
+
+.container-sm small devices- screen width =>576 px
+.container-md - >=768px
+.container-lg >=992px
+.container-xl >=1200px
+.conatiner-xxl >=1400px
+
+Bootstrap grid system
+it divides width in 12 columns. the columns will re-arrange automatically depending on screen-size
