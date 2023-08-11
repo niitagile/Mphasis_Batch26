@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(0,0,0,0.2);
+}
+div{
+    position:absolute;
+    border: 2px solid white;
+    top: 15%;
+    left: 35%;
+    border-radius: 4px;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+input{
+    width: 300px;
+    border : none;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+button{
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    border : none;
+    background-color: aqua;
+}
+input:hover{
+    outline: none;
+    background-color: white;
+}
