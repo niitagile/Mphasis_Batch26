@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Matching</title>
+  <script>
+    function checkPasswords() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+
+      if (password === confirmPassword) {
+        document.getElementById("message").innerHTML = "Passwords match!";
+      } else {
+        document.getElementById("message").innerHTML = "Passwords do not match.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Password Matching</h2>
+  <form>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br><br>
+    
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" required><br><br>
+    
+    <button type="button" onclick="checkPasswords()">Check</button>
+  </form>
+  
+  <p id="message"></p>
+</body>
+</html>

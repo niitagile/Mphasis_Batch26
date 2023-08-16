@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<body>
+
+<h2>Calculator</h2>
+
+<label for="num1">Number 1:</label>
+<input type="text" id="num1" placeholder="Enter number 1"><br><br>
+
+<label for="num2">Number 2:</label>
+<input type="text" id="num2" placeholder="Enter number 2"><br><br>
+
+<button onclick="calculate('add')">Addition</button>
+<button onclick="calculate('divide')">Division</button>
+
+<div id="result"></div>
+
+<script>
+function calculate(operation) {
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
+  var resultDiv = document.getElementById("result");
+
+  var result;
+  switch (operation) {
+    case 'add':
+      result = num1 + num2;
+      break;
+    case 'divide':
+      if (num2 === 0) {
+        resultDiv.innerHTML = "Cannot divide by zero.";
+        return;
+      }
+      result = num1 / num2;
+      break;
+    default:
+      resultDiv.innerHTML = "Invalid operation selected.";
+      return;
+  }
+
+  resultDiv.innerHTML = "Result: " + result;
+}
+</script>
+
+</body>
+</html>

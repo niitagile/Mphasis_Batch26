@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h1>Multiplication of theTable</h1>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="txtnumber">
+    <button onclick="generateTable()">Generate Table</button>
+    <p id="table"></p>
+
+    <script>
+       
+        function generateTable() {
+            var number = parseInt(document.getElementById("number").value);
+            var tableElement = document.getElementById("table");
+
+
+            var tableHtml = "<h2>Table for " + number + "</h2>";
+            tableHtml += "<table border=2>";
+            for (var i = 1; i <= 10; i++) {
+                var result = number * i;
+                tableHtml += "<tr><td>" + number + " x " + i + " = </td><td>" + result + "</td></tr>";
+            }
+            tableHtml += "</table>";
+
+            tableElement.innerHTML = tableHtml;
+        }
+    </script>
+</body>
+</html>

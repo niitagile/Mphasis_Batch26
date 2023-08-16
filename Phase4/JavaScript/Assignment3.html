@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Uppercase Converter</title>
+</head>
+<body>
+  <label for="nameField">Enter your name: </label>
+  <input type="text" id="nameField" oninput="convertToUppercase(this)">
+
+  <script>
+    //Take your name in a text field and change it to upper case in same text 
+    function convertToUppercase(inputField) {
+      inputField.value = inputField.value.toUpperCase();
+    }
+  </script>
+</body>
+</html>
