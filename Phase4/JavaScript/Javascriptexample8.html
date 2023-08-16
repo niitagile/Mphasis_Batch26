@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+    <h1> Call back function- passing function body as parameter</h1>
+<p id="demo"></p>
+<script>
+    function myDisplayer(result){
+        document.getElementById("demo").innerHTML=result;
+    }
+
+    function myCalculator(num1,num2,myCallBack){
+        let sum=num1+num2;
+        myCallBack(sum);//myDisplayer(sum);
+    }
+
+    myCalculator(10,20,myDisplayer);
+</script>
+
+</body>
+</html>
