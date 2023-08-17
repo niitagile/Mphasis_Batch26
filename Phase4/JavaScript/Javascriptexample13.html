@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+    Call Answer
+    <p id="demo"></p>
+    Apply Answer
+    <p id="demo1"></p>
+    <script>
+        const person={
+            fullname:function(city, country){
+                return this.firstName+ " "+this.lastName+" "+city+" "+country;
+            }
+        }
+        const person1={
+            firstName: "John",
+            lastName: "Doe"
+
+        }
+
+ //call() takes argumentlist separately      
+document.getElementById("demo").innerHTML=person.fullname.call(person1,"Delhi","India");
+//apply() takes argumentlist in form of array
+document.getElementById("demo1").innerHTML=person.fullname.apply(person1,["Delhi","India"]);
+    </script>
+</body>
+</html>

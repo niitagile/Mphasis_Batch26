@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body>
+    <h3>prototype is inbuilt functionality. Whenver a function is created, javascript adds a prototype 
+        property to that function.this property helps you to add variables and function in existing object </h3>
+
+<p id="demo"></p>
+
+<script>
+//function constructor
+function Person(firstName, lastName, age){
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.age=age;
+
+}
+Person.prototype.fullname=function(){
+    return this.firstName+" "+this.lastName
+};
+
+const obj=new Person("John","Doe",50);
+document.getElementById("demo").innerHTML="My father is "+obj.fullname();
+</script>
+
+
+
+    </body>
+</html>
