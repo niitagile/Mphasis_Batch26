@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+    <h4>map() is used to read elements from an array and it treats each element as a new array and perfom functionality on it</h4>
+<p id="demo"></p>
+<script>
+    //create a map
+    const fruits=new Map([
+["apple",500],
+["banana",100],
+["oranges",200]
+
+    ]);
+
+    let text="";
+
+    fruits.forEach((value,key)=>
+    text+=key+'='+value+"<br>"
+    );
+
+    document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html>
+//create a map and takes key and value from user
