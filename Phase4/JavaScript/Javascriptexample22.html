@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        function makeAdder1(x){
+            function addition(){
+                return x+x;
+            }
+            return addition;
+        }
+
+        var ans=makeAdder1(5);
+        var total=ans();
+        alert(total);
+    </script>
+</body>
+</html>
