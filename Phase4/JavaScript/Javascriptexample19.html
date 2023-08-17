@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        function getPromise(){
+            var promise=new Promise(
+                function(resolve,reject){
+                    setTimeout(function(){resolve({'country':'India'})},2000)
+                }
+            );
+            return promise;
+        }
+
+        async function getResult(){
+            let result=await getPromise();
+            return result;
+        }
+
+        async function doTask(){
+            let data=await getResult();
+            console.log(data);
+        }
+        doTask();
+    </script>
+</body>
+</html>
