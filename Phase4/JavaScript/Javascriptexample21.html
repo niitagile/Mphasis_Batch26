@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<body>
+<h6>Closures-> Nested function-> access to an outer function's scope from an inner function</h6>
+<script>
+    //Lexical Scope
+    // function init(){
+    //     var name="Manika";
+    //     //inner function
+    //     function displayName(){
+    //         alert(name);
+    //     }
+    //    displayName(); 
+    // }
+    // init();
+    //Closure - function return inner function
+    function init(){
+        var name="Pranika";
+        //inner function
+        function displayName(){
+            alert(name);
+        }
+       return displayName; 
+    }
+    var display=init();
+display();
+
+
+</script>
+
+</body>
+</html>
