@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        var promise=new Promise(
+        function(resolve,reject){
+            const x="Hello";
+            const y="hello";
+            if(x===y)
+            resolve();
+        else
+            reject();
+        });
+
+        promise.then(function(){alert('Success');})
+                .catch(function(){alert('some error has occured');});
+    </script>
+</body>
+</html>
