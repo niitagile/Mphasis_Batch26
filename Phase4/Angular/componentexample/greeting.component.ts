@@ -14,5 +14,9 @@ export class GreetingComponent implements OnInit {
   greet():void{
     alert("Hello Everyone. I am "+this.name);
   }
-
+productList: Array<any>=[
+  {pname: "rice", price:200},
+  {pname:"sugar", price:50}
+];
+show:boolean=true;
 }

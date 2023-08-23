@@ -2,3 +2,11 @@
 <input type="text" [(ngModel)]="name">
 <button (click)="greet()">Greet me</button>
 Welcome {{name}}<!--name is interpolated from .ts-->
+<li *ngFor="let obj of productList">
+    {{obj.pname}}{{obj.price}}
+</li>
+<button (click)="show=!show">{{show?'hide':'show'}}</button>
+show={{show}}
+<br>
+<div *ngIf="show; else elseBlock">Text to show</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template> 
