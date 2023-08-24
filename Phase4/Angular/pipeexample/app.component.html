@@ -1,0 +1,41 @@
+<h4>Data without pipe</h4>
+<br><br>Date Object:: {{toDate}}
+<br><br>Number Date::{{numDate}}
+<br><br>ISO Date::{{strDate}}
+<br><br>short Date ::{{toDate}}
+<br><br>Object ::{{obj}}
+<br><br>name :: {{name}}
+
+
+<h4>Data with pipe</h4>
+<br><br>Date Object:: {{toDate| date}}
+<br><br>Number Date::{{numDate | date}}
+<br><br>ISO Date::{{strDate | date}}
+<br><br>short Date ::{{toDate | date : "dd-MM-yyyy"}}
+<br><br>Object ::{{obj |json}}
+<br><br>name :: {{name | uppercase}}
+
+<h4> Custom Pipe for Temperature Calculation</h4>
+
+
+
+<p> Fahrenheit : <input type="text" [(ngModel)]="fahrenheit"/>  </p><br>
+<br>Celcius:: {{fahrenheit |tempChange :'C' }}
+
+<p> Celcius : <input type="text" [(ngModel)]="celcius"/>  </p><br>
+<br>Celcius:: {{celcius |tempChange :'F' }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
